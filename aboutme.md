@@ -1,16 +1,11 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: NoMik93
+subtitle: 선택은 빠르게, 말은 신중하게
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+저는 김재원입니다.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- 서울 경복고등학교/광운대학교(컴퓨터소프트웨어학과)를 졸업했습니다.
+- C/C++에 관심이 많으며, JAVA, JS, Python도 경험이 있습니다.
+- 현재 유엔젤(주)에서 MFC로 프로젝트 진행 중입니다.
