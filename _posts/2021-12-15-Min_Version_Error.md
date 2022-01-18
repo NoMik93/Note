@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 프로젝트의 지원 운영체제 최소 버전이 낮다는 오류
-subtitle: WINVER, _WIN32_WINNT, _WIN32_WINDOWS, _WIN32_IE
+subtitle: 'WINVER, _WIN32_WINNT, _WIN32_WINDOWS, _WIN32_IE'
 gh-repo: NoMik93/Note
 published: true
 tags:
@@ -105,5 +105,5 @@ afv_w32.h 파일에 명시된 에러로, 아래의 방식으로 해결했다.
     
 ***
 
-참고사이트
+참고사이트   
 https://stackoverflow.com/questions/14643962/error-c1189-error-this-file-requires-win32-winnt-to-be-defined-at-least-to
