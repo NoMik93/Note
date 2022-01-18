@@ -1,7 +1,12 @@
-Webview2 <-> HTML(JSP) 동기적 구현
-==========
-CDHtmlDialog를 CDialog로 변환하여 Webview2 사용하기
-------------
+---
+layout: post
+title: Webview2 <-> HTML(JSP) 동기적 구현
+subtitle: CDHtmlDialog를 CDialog로 변환하여 Webview2 사용하기
+gh-repo: NoMik93/MFC_Note
+published: true
+tags:
+  - WebView2
+---
 
 ***
 
