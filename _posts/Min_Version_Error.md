@@ -1,7 +1,16 @@
-프로젝트의 지원 운영체제 최소 버전이 낮다는 오류
-==========
-WINVER, _WIN32_WINNT, _WIN32_WINDOWS, _WIN32_IE
-------------
+---
+layout: post
+title: 프로젝트의 지원 운영체제 최소 버전이 낮다는 오류
+subtitle: WINVER, _WIN32_WINNT, _WIN32_WINDOWS, _WIN32_IE
+gh-repo: daattali/beautiful-jekyll
+published: true
+tags:
+  - WINVER
+  - _WIN32_WINNT
+  - _WIN32_WINDOWS
+  - _WIN32_IE
+---
+
 ***
 MFC에 WebView2를 적용하기 위해 wrl.h 헤더를 include 시켰을 때,
 아래와 같은 오류가 발생했다.
