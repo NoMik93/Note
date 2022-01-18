@@ -2,7 +2,7 @@
 layout: post
 title: 프로젝트의 지원 운영체제 최소 버전이 낮다는 오류
 subtitle: WINVER, _WIN32_WINNT, _WIN32_WINDOWS, _WIN32_IE
-gh-repo: NoMik93/MFC_Note
+gh-repo: NoMik93/Note
 published: true
 tags:
   - WINVER
