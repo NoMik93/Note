@@ -1,0 +1,29 @@
+CString 변수를 wchar_t 변수로 변환
+==========
+CA2W, CW2A을 사용하여 멀티바이트(Multibyte) 변수를 유니코드(Unicode) 변수로 변환
+------------
+
+***
+
+멀티바이트 형식을 유니코드로 변환하는 방법은 여러가지가 있으나, 내가 사용한 환경에서는 이 방법으로만 해결되었다.   
+(VS2010 -> VS2017 Migration, 멀티바이트 문자 집합 사용)
+
+MFC에서 webview2의 Navigate 함수의 변수로 URL을 넣을 때, 애초에 변수를 LPWSTR 등의 유니코드 변수를 사용하면 좋다.
+
+그러나 나의 경우처럼 옛날 프로그램의 CDHtmlDlg를 webview2로 변환하는 과정이라면 CString 등의 멀티바이트 변수가 사용되어 있을 수 있는데,
+이 때 필요한 것이 멀티바이트를 유니코드로 변환해주는 함수이다.   
+
+이 함수는 MS에서 개발한 것이므로 사용하기도 쉽고 속도도 MultiByteToWideChar, WideCharToMultiByte보다 빠르다.
+
+***
+
+사용예
+
+    wstring strUni = CA2W("멀티바이트형 변수");//멀티바이트 -> 유니코드   
+    wstring strUTF8 = CA2W("멀티바이트형 변수", CP_UTF8);//멀티바이트 -> 유니코드(CP_UTF8)   
+    wstring strUTF8 = CA2W("멀티바이트형 변수", CP_UTF16);//멀티바이트 -> 유니코드(CP_UTF16)   
+    string strMulti = CW2A(L"유니코드형 변수");//유니코드 -> 멀티바이트   
+    string strACP = CW2A(L"유니코드형 변수", CP_ACP);//유니코드 -> 멀티바이트(ACP)
+
+2번째 파라미터로 변환 형식을 지정할 수 있다.   
+또한 wstring 대신 LPWSTR, LPCWSTR 등의 유니코드(Wide) 변수를 사용할 수 있고 string 대신 CString, LPSTR, LPCSTR 등의 멀티바이트 변수를 사용할 수도 있다.
