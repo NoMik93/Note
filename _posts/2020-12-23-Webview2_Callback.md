@@ -1,7 +1,12 @@
-CDialog에서 WRL의 Callback 식별자 사용하기
-==========
-WebView2 사용시 필요한 Callback\<ICoreWebView2ExecuteScriptCompletedHandler\> 식별자 사용하기
-------------
+---
+layout: post
+title: CDialog에서 WRL의 Callback 식별자 사용하기
+subtitle: WebView2 사용시 필요한 Callback\<ICoreWebView2ExecuteScriptCompletedHandler\> 식별자 사용하기
+gh-repo: daattali/beautiful-jekyll
+published: true
+tags:
+  - WebView2
+---
 
 ***
 
