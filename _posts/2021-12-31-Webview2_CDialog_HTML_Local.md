@@ -2,7 +2,7 @@
 layout: post
 title: CDialog-WebView2에서 로컬의 HTML파일에 접근하기
 subtitle: 경로를 이용하여 로컬의 HTML파일을 Navigate하기
-gh-repo: NoMik93/MFC_Note
+gh-repo: NoMik93/Note
 published: true
 tags:
   - WebView2
