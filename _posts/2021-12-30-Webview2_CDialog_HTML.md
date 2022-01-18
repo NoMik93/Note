@@ -2,7 +2,7 @@
 layout: post
 title: CDialog-WebView2에서 MFC의 Resource에 포함된 HTML파일에 접근하기
 subtitle: CDHtmlDialog 사용하지 않고 Webview2에서 프로젝트에 포함된 HTML Resource 사용하기
-gh-repo: NoMik93/MFC_Note
+gh-repo: NoMik93/Note
 published: true
 tags:
   - WebView2
