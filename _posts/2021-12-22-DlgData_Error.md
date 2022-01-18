@@ -4,7 +4,7 @@ title: 다이얼로그에서 해당 컨트롤을 찾을 수 없다는 오류
 subtitle: 'Debug Assertion Failed!   
 File: ~stlmfc\src\mfc\dlgdata.cpp   
 Line: 40'
-gh-repo: NoMik93/MFC_Note
+gh-repo: NoMik93/Note
 published: true
 tags:
   - dlgdata.cpp
