@@ -10,26 +10,25 @@ tags:
 
 ***
 
-2022년 6월 15일 IE 지원 종료 예정에 따라 MFC 프로그램의 IE웹 사용을 모두 Webview2로 바꾸던 중,   
-최초 Webview2의 생성 시에 Callback\<ICoreWebView2CreateCoreWebView2ControllerCompletedHandler\>의 핸들링 함수에서
+2022년 6월 15일 IE 지원 종료 예정에 따라 MFC 프로그램의 IE웹 사용을 모두 Webview2로 바꾸던 중, 최초 Webview2의 생성 시에 Callback\<ICoreWebView2CreateCoreWebView2ControllerCompletedHandler\>의 핸들링 함수에서
 Navigate 함수 호출 후 연달아 ExecuteScript 함수를 호출 할 경우 ExecuteScript 함수가 무시되는 상황이 발생했다.
 
 또한 아래와 같이 OnInitDialog()에서 WebView를 Initialize한 뒤에 (m_Environment, m_Controller, m_WebView 모두 멤버변수)
 
-    BOOL CDlg::OnInitDialog()
+    BOOL 다이얼로그명::OnInitDialog()
     {
       CDialog::OnInitDialog();
       InitializeWebView();
       return TRUE;
     }
     
-    void CDlg::InitializeWebView()
+    void 다이얼로그명::InitializeWebView()
     {
       HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 		    Callback<ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler>(this, &CDlg::OnCreateEnvironmentCompleted).Get());
     }
     
-    HRESULT CDlg::OnCreateEnvironmentCompleted(HRESULT result, ICoreWebView2Environment * environment)
+    HRESULT 다이얼로그명::OnCreateEnvironmentCompleted(HRESULT result, ICoreWebView2Environment * environment)
     {
       HWND hWnd = GetSafeHwnd();
       m_Environment = environment;
@@ -38,7 +37,7 @@ Navigate 함수 호출 후 연달아 ExecuteScript 함수를 호출 할 경우 E
       return S_OK;
     }
     
-    HRESULT CDlg::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICoreWebView2Controller * controller)
+    HRESULT 다이얼로그명::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICoreWebView2Controller * controller)
     {
       if (result == S_OK)
       {
@@ -56,7 +55,7 @@ Navigate 함수 호출 후 연달아 ExecuteScript 함수를 호출 할 경우 E
 
 아래와 같이 코드를 추가하여 매개변수를 Webview에 Navigate된 Html페이지에 넘겨주는 경우에도 마찬가지로 ExecuteScript가 무시되었다.
 
-    BOOL CDlg::OnInitDialog()
+    BOOL 다이얼로그명::OnInitDialog()
     {
       CDialog::OnInitDialog();
       InitializeWebView();
@@ -86,7 +85,7 @@ Html Script 추가
 
 MFC Web Message Recieve 함수 추가
 
-    HRESULT CDlg::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICoreWebView2Controller * controller)
+    HRESULT 다이얼로그명::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICoreWebView2Controller * controller)
     {
       if (result == S_OK)
       {
@@ -107,7 +106,7 @@ MFC Web Message Recieve 함수 추가
 	    }
     }
     
-    HRESULT CSmsPreviewMmsDlg::WebMessageReceived(ICoreWebView2 * sender, ICoreWebView2WebMessageReceivedEventArgs * args)
+    HRESULT 다이얼로그명::WebMessageReceived(ICoreWebView2 * sender, ICoreWebView2WebMessageReceivedEventArgs * args)
     {
 	    LPWSTR pwStr;
 	    args->TryGetWebMessageAsString(&pwStr);
