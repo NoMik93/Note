@@ -1,10 +1,14 @@
-다이얼로그에서 해당 컨트롤을 찾을 수 없다는 오류
-==========
-Debug Assertion Failed!   
+---
+layout: post
+title: 다이얼로그에서 해당 컨트롤을 찾을 수 없다는 오류
+subtitle: 'Debug Assertion Failed!   
 File: ~stlmfc\src\mfc\dlgdata.cpp   
-Line: 40
-------------
-
+Line: 40'
+gh-repo: daattali/beautiful-jekyll
+published: true
+tags:
+  - dlgdata.cpp
+---
 ***
 
 해당 내용에 대해서 검색했을 때 컨트롤을 지우고 다이얼로그 cpp 파일에서 IDX_Control 선언을 지우지 않아서 생기는 오류라고 나왔으나,   
