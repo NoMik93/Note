@@ -2,7 +2,7 @@
 layout: post
 title: WebView2에서 UserDataPath 설정하기
 subtitle: WebView2 사용시 생성되는 EBWebView 폴더의 경로 설정하기
-gh-repo: NoMik93/MFC_Note
+gh-repo: NoMik93/Note
 published: true
 tags:
   - WebView2
