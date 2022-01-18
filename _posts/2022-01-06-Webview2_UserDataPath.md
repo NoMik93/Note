@@ -10,7 +10,7 @@ tags:
 
 ***
 
-MFC에서만 그런지는 모르겠으나, WebView2에서 특정 폴더에 디렉토리 및 파일을 생성 할 수 없다.
+MFC에서만 그런지는 모르겠으나, WebView2에서 특정 디렉토리에 폴더 및 파일을 생성 할 수 없다.
 
 "C:\Program Files" 와 "C:\Program Files (x86)" 같은 프로그램 파일 폴더도 그렇다.
 따라서 해당 폴더에 설치된, 혹은 복사된 프로그램에서 UserDataPath를 설정하지 않고 WebView2를 사용하면
