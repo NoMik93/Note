@@ -48,4 +48,4 @@ CHtmlDialog의 DOMContentLoaded 이벤트를 추가하는 것과 마찬가지 �
 ***
 
 참고 사이트   
-https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.1054.31#add_domcontentloaded
+[https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.1054.31#add_domcontentloaded](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.1054.31#add_domcontentloaded)
