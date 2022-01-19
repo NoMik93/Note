@@ -130,5 +130,5 @@ Html에서 DOM 로드가 끝나면 "DOMLoaded"라는 신호를 MFC로 보내주�
 ***
 
 참고 사이트   
-https://github.com/MicrosoftEdge/WebView2Feedback/issues/838   
-https://github.com/MicrosoftEdge/WebView2Feedback/issues/840
+[https://github.com/MicrosoftEdge/WebView2Feedback/issues/838](https://github.com/MicrosoftEdge/WebView2Feedback/issues/838)   
+[https://github.com/MicrosoftEdge/WebView2Feedback/issues/840](https://github.com/MicrosoftEdge/WebView2Feedback/issues/840)
