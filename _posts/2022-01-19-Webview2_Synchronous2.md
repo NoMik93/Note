@@ -31,7 +31,7 @@ CHtmlDialog의 DOMContentLoaded 이벤트를 추가하는 것과 마찬가지 �
               return S_OK;
           }).Get(), &m_DOMContentLoadedToken);
           
-          coreWebView2_2.query_to<ICoreWebView2>(&m_WebView); // 다시 ICoreWebView2로 Query
+          coreWebView2_2.query_to<ICoreWebView2>(&m_WebView);
           HRESULT hresult = m_WebView->Navigate("사이트 주소"));
       }
       else
