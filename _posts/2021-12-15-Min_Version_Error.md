@@ -106,4 +106,4 @@ afv_w32.h 파일에 명시된 에러로, 아래의 방식으로 해결했다.
 ***
 
 참고사이트   
-https://stackoverflow.com/questions/14643962/error-c1189-error-this-file-requires-win32-winnt-to-be-defined-at-least-to
+[https://stackoverflow.com/questions/14643962/error-c1189-error-this-file-requires-win32-winnt-to-be-defined-at-least-to](https://stackoverflow.com/questions/14643962/error-c1189-error-this-file-requires-win32-winnt-to-be-defined-at-least-to)
