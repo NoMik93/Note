@@ -42,4 +42,4 @@ ActiveX를 사용하면 로컬 파일에 접근할 수 있다고 하는데, 나�
 ***
 
 참고 사이트   
-https://github.com/MicrosoftEdge/WebView2Feedback/issues/772
+[https://github.com/MicrosoftEdge/WebView2Feedback/issues/772](https://github.com/MicrosoftEdge/WebView2Feedback/issues/772)
