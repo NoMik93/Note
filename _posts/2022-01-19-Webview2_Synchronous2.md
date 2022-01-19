@@ -20,10 +20,10 @@ CHtmlDialog의 DOMContentLoaded 이벤트를 추가하는 것과 마찬가지 �
       if (result == S_OK)
       {
           m_Controller = controller;
-          wil::com_ptr\<ICoreWebView2\> coreWebView2;
-          wil::com_ptr\<ICoreWebView2_2\> coreWebView2_2;
+          wil::com_ptr<ICoreWebView2> coreWebView2;
+          wil::com_ptr<ICoreWebView2_2> coreWebView2_2;
           m_Controller->get_CoreWebView2(&coreWebView2);
-          coreWebView2_2 = coreWebView2.query\<ICoreWebView2_2\>(); \/\/add_DOMContentLoaded 함수는 ICoreWebView2_2에 존재하므로 해당 Interface로 Query
+          coreWebView2_2 = coreWebView2.query<ICoreWebView2_2>(); //add_DOMContentLoaded 함수는 ICoreWebView2_2에 존재하므로 해당 Interface로 Query
           EventRegistrationToken m_DOMContentLoadedToken;
           coreWebView2_2->add_DOMContentLoaded(Callback<ICoreWebView2DOMContentLoadedEventHandler>(
               [this](ICoreWebView2* sender, ICoreWebView2DOMContentLoadedEventArgs* args)->HRESULT {
@@ -42,7 +42,8 @@ CHtmlDialog의 DOMContentLoaded 이벤트를 추가하는 것과 마찬가지 �
       return S_OK;
 	}
 
-위에서 볼 수 있듯이 add_DOMContentLoaded 함수를 이용해서 이벤트를 추가할 수 있다. 이때 add_DOMContentLoaded 함수는 ICoreWebView2_2 Interface에 정의되어 있기 때문에, 해당 Interface로 Query하여 함수를 사용한다. 그리고 Navigate와 같은 함수는 ICoreWebView2에 정의되어 있기에 다시 ICoreWebView2로 Query하면 해당 함수들을 사용할 수 있다. 또한 Query는 "(Query받을변수) = (Query대상변수).query\<인터페이스명\>()"으로 해도 되고, "(Query대상변수).query_to\<인터페이스명\>(&Query받을변수)"로 사용해도 된다.
+위에서 볼 수 있듯이 add_DOMContentLoaded 함수를 이용해서 이벤트를 추가할 수 있다. 이때 add_DOMContentLoaded 함수는 ICoreWebView2_2 Interface에 정의되어 있기 때문에, 해당 Interface로 Query하여 함수를 사용한다. 그리고 Navigate와 같은 함수는 ICoreWebView2에 정의되어 있기에 다시 ICoreWebView2로 Query하면 해당 함수들을 사용할 수 있다.   
+또한 Query는 "(Query받을변수) = (Query대상변수).query\<인터페이스명\>()"으로 해도 되고, "(Query대상변수).query_to\<인터페이스명\>(&Query받을변수)"로 사용해도 된다.
 
 ***
 
