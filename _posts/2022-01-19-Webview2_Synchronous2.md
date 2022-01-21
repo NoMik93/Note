@@ -11,7 +11,7 @@ tags:
 
 ***
 
-이전에 올렸던 [Webview2-HTML(JSP) 동기적 구현](https://nomik93.github.io/Note/2021-12-28-Webview2_Synchronous) 포스트에서 사용했던 방식보다 훨씬 나은 방식을 알게 되어서 다시 작성한다.
+이전에 올렸던 '[Webview2-HTML(JSP) 동기적 구현](https://nomik93.github.io/Note/2021-12-28-Webview2_Synchronous)' 포스트에서 사용했던 방식보다 훨씬 나은 방식을 알게 되어서 다시 작성한다.
 
 CHtmlDialog의 DOMContentLoaded 이벤트를 추가하는 것과 마찬가지 방식이 WebView2에도 존재하는데, 그것은 아래와 같이 구현할 수 있다.
 
