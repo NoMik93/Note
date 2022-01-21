@@ -11,11 +11,10 @@ tags:
 
 ***
 
-MFC 프로그램에서 WebView2로 웹페이지를 띄우고 그 웹페이지에서 파일을 저장하려고 하면, IE에서의 다운로드와 크로미움 기반 웹에서의 다운로드를 따로 지정해야 한다.
-그리고 BLOB을 다운로드 하는 과정에서 아래와 같이 HTML파일의 코드를 짤 수 있는데, IE에서야 자동으로 '다른 이름으로 저장' 다이얼로그를 띄워서 원하는 위치로 저장하게 해주지만,
+MFC 프로그램에서 WebView2로 웹페이지를 띄우고 그 웹페이지에서 파일을 저장하려고 하면, IE에서의 다운로드와 크로미움 기반 웹에서의 다운로드를 따로 지정해야 한다.   
+그리고 BLOB을 다운로드 하는 과정에서 아래와 같이 HTML파일의 코드를 짤 수 있는데, IE에서야 자동으로 '다른 이름으로 저장' 다이얼로그를 띄워서 원하는 위치로 저장하게 해주지만, 
 크로미움 기반 웹에서는 저장 위치를 설장하는 창이 안 뜨고 바로 download 폴더에 다운로드 된다.
 
-a tag를 사용하지 않고 저장 위치와 파일 이름을 지정할 수 있는 다른방법을 찾아봤으나, HTML에서는 찾지 못했다.
 
     function downloadURI(blob, name) {
         if (window.navigator && window.navigator.msSaveOrOpenBlob) {
@@ -31,11 +30,12 @@ a tag를 사용하지 않고 저장 위치와 파일 이름을 지정할 수 있
         }
     }
 
+a tag를 사용하지 않고 저장 위치와 파일 이름을 지정할 수 있는 다른방법을 찾아봤으나, HTML에서는 찾지 못했다. 
 따라서 이를 해결하기 위해 MFC에서 '다른 이름으로 저장' 다이얼로그를 띄우고 그 위치로 저장하도록 했다.
 
 ***
 
-MFC에서 WebView2에 다운로드 이벤트를 설정하는 코드는 아래와 같다. 이 때 downloadPath라는 CString 형태의 전역변수에서 저장할 Path를 가져오는데,
+MFC에서 WebView2에 다운로드 이벤트를 설정하는 코드는 아래와 같다. 이 때 downloadPath라는 CString 형태의 전역변수에서 저장할 Path를 가져오는데, 
 이 변수의 value가 바뀐 뒤에 동기적으로 다운로드가 진행되면 해당 위치로 저장이 된다.
 
     HRESULT 다이얼로그명::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICoreWebView2Controller * controller)
@@ -66,11 +66,12 @@ MFC에서 WebView2에 다운로드 이벤트를 설정하는 코드는 아래와
       return S_OK;
     }
 
-위에서 볼 수 있듯이 add_DownloadStarting 함수를 이용해서 이벤트를 추가할 수 있다.
-이때 add_DownloadStarting 함수는 ICoreWebView2_4 Interface에 정의되어 있기 때문에, 해당 Interface로 Query하여 함수를 사용한다.
+위에서 볼 수 있듯이 add_DownloadStarting 함수를 이용해서 이벤트를 추가할 수 있다. 
+이때 add_DownloadStarting 함수는 ICoreWebView2_4 Interface에 정의되어 있기 때문에, 해당 Interface로 Query하여 함수를 사용한다. 
 그리고 Navigate와 같은 함수는 ICoreWebView2에 정의되어 있기에 다시 ICoreWebView2로 Query하면 해당 함수들을 사용할 수 있다.
 
-그리고 MFC에서 '다른 이름으로 저장' 다이얼로그를 띄우기 위해 먼저 HTML에서 다운로드 버튼 클릭 이벤트를 추가한다. 나는 JSON 형태로 MFC에 Parameter를 넘겨줄건데, 이 때 evnet key를 사용하여 이벤트를 구분했다.
+그리고 MFC에서 '다른 이름으로 저장' 다이얼로그를 띄우기 위해 먼저 HTML에서 다운로드 버튼 클릭 이벤트를 추가한다. 
+나는 JSON 형태로 MFC에 Parameter를 넘겨줄건데, 이 때 evnet key를 사용하여 이벤트를 구분했다.
 
     $( this ).find( '.btn_down' ).click( function( e ) {
       e.preventDefault();
