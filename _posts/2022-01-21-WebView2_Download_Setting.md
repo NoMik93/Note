@@ -82,7 +82,7 @@ MFC에서 WebView2에 다운로드 이벤트를 설정하는 코드는 아래와
       window.chrome.webview.postMessage(JSON.stringify(obj));
     }
 
-MFC에서 위의 Message를 받는 함수는 아래와 같은데, Web Message Recieve 이벤트를 추가하는 법은 [Webview2-HTML(JSP) 동기적 구현](https://nomik93.github.io/Note/2021-12-28-Webview2_Synchronous/)에서 볼 수 있다.
+MFC에서 위의 Message를 받는 함수는 아래와 같은데, Web Message Recieve 이벤트를 추가하는 법은 '[Webview2-HTML(JSP) 동기적 구현](https://nomik93.github.io/Note/2021-12-28-Webview2_Synchronous/)'에서 볼 수 있다.
 
     HRESULT CRecordListDlg::WebMessageReceived(ICoreWebView2 * sender, ICoreWebView2WebMessageReceivedEventArgs * args)
     {
