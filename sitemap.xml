@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+   <loc>https://nomik93.github.io/Note/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2022-01-19-Webview2_Synchronous2/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2022-01-06-Webview2_UserDataPath/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2021-12-31-Webview2_CDialog_HTML_Local/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2021-12-30-Webview2_CDialog_HTML/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2021-12-28-Webview2_Synchronous/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/aboutme/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/tags/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2021-12-24-Webview2_Callback/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/page2/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2021-12-15-Min_Version_Error/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2021-12-16-Afxwin1.inl_Error/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2021-12-22-DlgData_Error/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://nomik93.github.io/Note/2021-12-23-CA2W/</loc>
+   <lastmod>2022-01-21T01:59:56+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+</urlset>
